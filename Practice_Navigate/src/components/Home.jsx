@@ -3,12 +3,12 @@ import FormContext from "../context/FormContext";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-    const {formData,setFormData}=useContext(FormContext);
-    const navigate = useNavigate();
+  const { formData, setFormData } = useContext(FormContext);
+  const navigate = useNavigate();
 
-    const gotoPersonal=()=>{
-        navigate('/personal')
-    }
+  const gotoPersonal = () => {
+    navigate("/personal");
+  };
   return (
     <>
       <div className="signup-container">
@@ -36,8 +36,8 @@ function Home() {
             setFormData({ ...formData, confirmPassword: e.target.value });
           }}
         />
+        <button onClick={() => gotoPersonal()}>Next</button>
       </div>
-      <button onClick={()=>gotoPersonal()}>Next</button>
     </>
   );
 }

@@ -6,7 +6,7 @@ import FormContextProvider from "./context/FormContextProvider";
 function Layout() {
   return (
     <FormContextProvider>
-      <Header />
+      <Header/>
       <Outlet />
     </FormContextProvider>
   );

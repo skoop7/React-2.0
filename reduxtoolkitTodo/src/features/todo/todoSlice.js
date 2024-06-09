@@ -29,7 +29,7 @@ export const todoSlice = createSlice({
       const { id, newText } = action.payload;
       state.todos = state.todos.map((todoEachvalue) =>
         todoEachvalue.id === id
-          ? { ...todoEachvalue, text: newText }
+          ? { text: newText }
           : todoEachvalue
       );
     },

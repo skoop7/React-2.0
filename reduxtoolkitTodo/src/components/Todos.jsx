@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeTodo, updateTodo } from "../features/todo/todoSlice";
 
 function Todos() {
-  const todos = useSelector((state) => state.todos); //we get access of state in useselector and as we have initialstate todos so we use todos
+  const todos = useSelector((state) => state.todos); // We get access to state in useSelector and as we have initial state todos, we use todos
   const dispatch = useDispatch();
   const [editId, setEditId] = useState(null);
   const [editedText, setEditedText] = useState("");
